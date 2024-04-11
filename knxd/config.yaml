@@ -30,7 +30,7 @@ schema:
   address: "match(^\\d+\\.\\d+.\\d+$)"
   client_address: "match(^\\d+\\.\\d+.\\d+\\:\\d+$)"
   interface: "list(tpuart|tpuart-ip|usb|ft12|ft12cemi|ncn5120|ncn5120-ip|dummy)"
-  device: "device?"
+  device: "str"
   log_error_level: "list(warning|error|fatal|note|info|debug)"
   usb_filters: "str?"
   ip_address: "str?"
