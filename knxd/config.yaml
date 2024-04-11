@@ -17,8 +17,8 @@ privileged:
   - SYS_MODULE
   - SYS_RAWIO
 options:
-  address: "0.0.1"
-  client_address: "0.0.2:8"
+  address: "1.1.7"
+  client_address: "1.1.8:9"
   interface: usb
   device: ""
   log_error_level: warning
@@ -45,3 +45,5 @@ ports_description:
   "3671/udp": "Required by knx interface and being able to access the KNX bus via ETS"
 image: "ghcr.io/da-anda/hass-io-addons-{arch}-addon-knxd"
 uart: true
+devicetree: true
+usb: true
